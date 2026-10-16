@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
       - name: Run Switch Trust Inventory detection
-        uses: sandbox-quantum/switch-trust-codescan-action@v6
+        uses: sandbox-quantum/switch-trust-codescan-action@7e261a61f4d052c722f0a384c946f571f142dfd1 #v7
         with:
           switch_trust_instance: https://app.switchagents.ai
           switch_trust_token: ${{ secrets.SWITCH_TRUST_TOKEN }}
